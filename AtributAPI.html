@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form id="myForm">
+        <label for="ip">Ip:</label>
+        <input type="text" id="ip" name="ip"><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        var data = {"ip": "6.7.6.7", "country": "Dutch"};
+
+        document.getElementById("ip").value = data.ip;
+        document.getElementById("country").value = data.country;
+    </script>
+</body>
+</html>
